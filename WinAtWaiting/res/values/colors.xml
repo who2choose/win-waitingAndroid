@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <color name="wwCyan">#23b7c1</color>
+ <color name="wwDarkBlue">#2823c1</color>
+ <color name="wwYellow">#e5d220</color>
+ <color name="wwGold">#ccbf46</color>
+ <color name="wwWhite">#ffffff</color>
+ <color name="wwBlack">#000000</color>
+</resources>
