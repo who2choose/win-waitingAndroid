@@ -42,7 +42,8 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, BookActivity.class);
 		EditText editText = (EditText) findViewById(R.id.edittext_test);
 		String message = editText.getText().toString();
-		intent.putExtra(EXTRA_MESSAGE, message);
+		message = String.valueOf(getActionBar().getHeight());
+		intent.putExtra(MainActivity.EXTRA_MESSAGE, message);
 		startActivity(intent);
 	}
 }

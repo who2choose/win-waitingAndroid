@@ -1,5 +1,6 @@
 package cs495.winatwaiting.activities;
 
+import cs495.winatwaiting.MainActivity;
 import cs495.winatwaiting.R;
 import android.app.Activity;
 import android.content.Intent;
@@ -23,7 +24,7 @@ public class BookActivity extends Activity {
 	    // Create the text view
 	    TextView textView = new TextView(this);
 	    textView.setTextSize(40);
-	    textView.setText(message + " ayy lmao");
+	    textView.setText(message);
 	    textView.setX(64);
 	    textView.setY(64);
 
