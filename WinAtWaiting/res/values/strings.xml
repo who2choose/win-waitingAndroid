@@ -2,9 +2,34 @@
 <resources>
 
     <string name="app_name">Win@Waiting</string>
-    <string name="hello_world">Hello world!</string>
+    
+    <!-- Settings Strings -->
     <string name="action_settings">Settings</string>
-    <string name="button_test">Testing&#8230;</string>
-    <string name="edittext_test">try it out</string>
+    <string name="create_task_action_item">Create Task</string>
+    
+    <!-- Main Screen Strings -->
+    <string name="main_activity_title">Win@Waiting</string>
+    <string name="main_activity_button_view_tasks">Tasks</string>
+    <string name="main_activity_button_create_tasks">+</string>
+    <string name="main_activity_button_todo">To-Do List</string>
+    <string name="main_activity_button_social">Social</string>
+    <string name="main_activity_button_book">Book</string>
+    
+    <!-- Book Activity Strings -->
+    <string name="book_activity_title">Win at Waiting</string>
+    
+    <!-- Create Tasks Activity Strings -->
+    <string name="create_tasks_activity_title">Create Tasks</string>
+    
+    <!-- ToDo Activity Strings -->
+    <string name="todo_activity_title">To-Do List</string>
+    
+    <!-- View Tasks Activity Strings -->
+    <string name="view_tasks_activity_title">View Tasks</string>
+    
+    <!-- View Tasks Activity Filter Fragment Strings -->
+    
+    <!-- View Tasks Activity View Fragment Strings -->
+    
 
 </resources>

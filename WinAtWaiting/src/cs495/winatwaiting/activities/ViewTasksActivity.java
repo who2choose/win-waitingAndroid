@@ -1,9 +1,44 @@
 package cs495.winatwaiting.activities;
 
+import cs495.winatwaiting.R;
 import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toolbar;
 
 public class ViewTasksActivity extends Activity {
 
-	//TODO: consider renaming
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_view_tasks);
+		setupToolBar();
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.view_tasks, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+	
+	public void setupToolBar(){
+		Toolbar actionBarToolbar = (Toolbar) findViewById(R.id.action_bar_toolbar);
+		setActionBar(actionBarToolbar);
+		getActionBar().setDisplayHomeAsUpEnabled(true);
+	}
 	
 }

@@ -1,13 +1,13 @@
 package cs495.winatwaiting;
 
-import cs495.winatwaiting.activities.BookActivity;
+import cs495.winatwaiting.activities.*;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 
 public class MainActivity extends Activity {
 	
@@ -17,6 +17,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		setupToolBar();
 	}
 
 	@Override
@@ -38,12 +39,33 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 	
-	public void sendMessage(View view){
-		Intent intent = new Intent(this, BookActivity.class);
-		EditText editText = (EditText) findViewById(R.id.edittext_test);
-		String message = editText.getText().toString();
-		message = String.valueOf(getActionBar().getHeight());
-		intent.putExtra(MainActivity.EXTRA_MESSAGE, message);
-		startActivity(intent);
+	public void setupToolBar(){
+		Toolbar actionBarToolbar = (Toolbar) findViewById(R.id.action_bar_toolbar);
+		setActionBar(actionBarToolbar);
 	}
+	
+	public void activityChangePrimer(View view){
+		switch(view.getId()){
+		case R.id.button_view_tasks:
+			activityChangeDriver(ViewTasksActivity.class);
+			break;
+		case R.id.button_create_tasks:
+			activityChangeDriver(CreateTasksActivity.class);
+			break;
+		case R.id.button_todo:
+			activityChangeDriver(ToDoActivity.class);
+			break;
+		case R.id.button_social:
+			break;
+		case R.id.button_book:
+			activityChangeDriver(BookActivity.class);
+			break;
+		}
+	}
+	
+	public void activityChangeDriver(Class c){
+		Intent i = new Intent(this, c);
+		startActivity(i);
+	}
+	
 }

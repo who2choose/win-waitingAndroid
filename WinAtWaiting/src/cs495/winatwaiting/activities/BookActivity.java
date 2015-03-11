@@ -1,13 +1,11 @@
 package cs495.winatwaiting.activities;
 
-import cs495.winatwaiting.MainActivity;
 import cs495.winatwaiting.R;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
+import android.widget.Toolbar;
 
 public class BookActivity extends Activity {
 
@@ -15,22 +13,7 @@ public class BookActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_book);
-		
-
-	    // Get the message from the intent
-	    Intent intent = getIntent();
-	    String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-
-	    // Create the text view
-	    TextView textView = new TextView(this);
-	    textView.setTextSize(40);
-	    textView.setText(message);
-	    textView.setX(64);
-	    textView.setY(64);
-
-	    // Set the text view as the activity layout
-	    setContentView(textView);
-	    getActionBar().setDisplayHomeAsUpEnabled(true);
+		setupToolBar();
 	}
 
 	@Override
@@ -50,6 +33,12 @@ public class BookActivity extends Activity {
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	public void setupToolBar(){
+		Toolbar actionBarToolbar = (Toolbar) findViewById(R.id.action_bar_toolbar);
+		setActionBar(actionBarToolbar);
+		getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 	
 }
