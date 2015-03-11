@@ -5,16 +5,16 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="18" />
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/MainTheme" >
         <activity
-            android:name=".SplashScreen"
+            android:name="cs495.winatwaiting.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,36 +22,51 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainScreen"
-            android:label="@string/app_name" >
+            android:name="cs495.winatwaiting.activities.CreateTastsActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="cs495.winatwaiting.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs495.winatwaiting.MainActivity" />
             <intent-filter>
-                <action android:name="cs495.winatwaiting.MAINSCREEN" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.CREATE_TASK" />
+                <category android:name="android.intent.action.DEFAULT" />
+                <!-- TODO: add a data type to manage -->
+            </intent-filter>
+        </activity>
+         <activity
+            android:name="cs495.winatwaiting.activities.ViewTastsActivity"
+            android:label="@string/app_name" 
+            android:parentActivityName="cs495.winatwaiting.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs495.winatwaiting.MainActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW_TASK" />
+                <category android:name="android.intent.action.DEFAULT" />
+                <!-- TODO: add a data type to manage -->
             </intent-filter>
         </activity>
         <activity
-            android:name=".CreditsScreen"
-            android:label="@string/app_name" >
+            android:name="cs495.winatwaiting.activities.ToDoActivity"
+            android:label="@string/app_name" 
+            android:parentActivityName="cs495.winatwaiting.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs495.winatwaiting.MainActivity" />
             <intent-filter>
-                <action android:name="cs495.winatwaiting.CREDITSSCREEN" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.EDIT_TODO" />
+                <category android:name="android.intent.action.DEFAULT" />
+                <!-- TODO: add a data type to manage -->
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ViewTaskScreen"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="cs495.winatwaiting.VIEWTASKSCREEN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".CreateTaskScreen"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="cs495.winatwaiting.CREATETASKSCREEN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+       	<activity
+            android:name="cs495.winatwaiting.activities.BookActivity"
+            android:label="@string/app_name" 
+            android:parentActivityName="cs495.winatwaiting.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs495.winatwaiting.MainActivity" />
         </activity>
     </application>
 
