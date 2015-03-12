@@ -1,13 +1,17 @@
 package cs495.winatwaiting.activities;
 
 import cs495.winatwaiting.R;
-import android.app.Activity;
+import android.annotation.SuppressLint;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toolbar;
+import android.view.Window;
+import android.view.WindowManager;
 
-public class CreateTasksActivity extends Activity {
+public class CreateTasksActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +41,18 @@ public class CreateTasksActivity extends Activity {
 	
 	public void setupToolBar(){
 		Toolbar actionBarToolbar = (Toolbar) findViewById(R.id.action_bar_toolbar);
-		setActionBar(actionBarToolbar);
-		getActionBar().setDisplayHomeAsUpEnabled(true);
+		setSupportActionBar(actionBarToolbar);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+			buildForLollipop();
+		}
+	}
+	
+	@SuppressLint("InlinedApi")
+	public void buildForLollipop(){
+		Window window = getWindow();
+		window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+		window.setStatusBarColor(getResources().getColor(R.color.titular_blue_secondary));
 	}
 	
 }

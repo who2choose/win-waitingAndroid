@@ -585,8 +585,6 @@ int style Base_Widget_AppCompat_Spinner 0x7f0b0077
 int style Base_Widget_AppCompat_Spinner_DropDown_ActionBar 0x7f0b0078
 int style Base_Widget_AppCompat_Toolbar 0x7f0b008f
 int style Base_Widget_AppCompat_Toolbar_Button_Navigation 0x7f0b0090
-int style CustomActionBarText 0x7f0b00ee
-int style CustomActionBarTheme 0x7f0b00ed
 int style MainTheme 0x7f0b00ec
 int style Platform_AppCompat 0x7f0b00c9
 int style Platform_AppCompat_Dialog 0x7f0b00cb

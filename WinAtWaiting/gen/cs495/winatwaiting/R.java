@@ -2017,8 +2017,6 @@ containing a value of this type.
     
          */
         public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b0090;
-        public static final int CustomActionBarText=0x7f0b00ee;
-        public static final int CustomActionBarTheme=0x7f0b00ed;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */

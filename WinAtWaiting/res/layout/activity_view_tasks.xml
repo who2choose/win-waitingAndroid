@@ -1,16 +1,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="cs495.winatwaiting.activities.ViewTasksActivity" >
 
-    <android.widget.Toolbar
+    <android.support.v7.widget.Toolbar
         android:id="@+id/action_bar_toolbar"
         android:minHeight="56dp"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:background="@color/titular_blue_primary"
-        android:theme="@style/CustomActionBarTheme" >
-    </android.widget.Toolbar>
-    
+		app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        
 </RelativeLayout>
