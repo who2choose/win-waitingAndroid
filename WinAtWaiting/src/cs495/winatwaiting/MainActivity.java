@@ -4,6 +4,7 @@ import cs495.winatwaiting.activities.*;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.annotation.SuppressLint;
+import android.support.v4.app.TaskStackBuilder;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -14,8 +15,6 @@ import android.view.Window;
 import android.view.WindowManager;
 
 public class MainActivity extends ActionBarActivity {
-	
-	public final static String EXTRA_MESSAGE = "cs495.winatwaiting.MESSAGE";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,44 +41,48 @@ public class MainActivity extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
-	public void setupToolBar(){
-		Toolbar actionBarToolbar = (Toolbar) findViewById(R.id.action_bar_toolbar);
-		setSupportActionBar(actionBarToolbar);
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+
+	public void setupToolBar() {
+		setSupportActionBar((Toolbar) findViewById(R.id.action_bar_toolbar));
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 			buildForLollipop();
 		}
 	}
-	
-	public void activityChangePrimer(View view){
-		switch(view.getId()){
+
+	public void activityChangePrimer(View view) {
+		switch (view.getId()) {
 		case R.id.button_view_tasks:
-			activityChangeDriver(ViewTasksActivity.class);
+			// add any necessary extras/synthesize back stack here
+			startActivity(new Intent(this, TaskActivity.class));
 			break;
 		case R.id.button_create_tasks:
-			activityChangeDriver(CreateTasksActivity.class);
+			// add any necessary extras/synthesize back stack here
+			TaskStackBuilder
+					.create(this)
+					.addNextIntentWithParentStack(
+							new Intent(this, TaskActivity.class))
+					.addNextIntent(new Intent(this, CreateTaskActivity.class))
+					.startActivities();
 			break;
 		case R.id.button_todo:
-			activityChangeDriver(ToDoActivity.class);
+			// add any necessary extras/synthesize back stack here
+			startActivity(new Intent(this, ToDoActivity.class));
 			break;
 		case R.id.button_social:
 			break;
 		case R.id.button_book:
-			activityChangeDriver(BookActivity.class);
+			// add any necessary extras/synthesize back stack here
+			startActivity(new Intent(this, BookActivity.class));
 			break;
 		}
 	}
-	
-	public void activityChangeDriver(Class c){
-		Intent i = new Intent(this, c);
-		startActivity(i);
-	}
-	
+
 	@SuppressLint("InlinedApi")
-	public void buildForLollipop(){
+	public void buildForLollipop() {
 		Window window = getWindow();
 		window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-		window.setStatusBarColor(getResources().getColor(R.color.titular_blue_secondary));
+		window.setStatusBarColor(getResources().getColor(
+				R.color.primary_color_dark));
 	}
-	
+
 }

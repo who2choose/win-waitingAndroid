@@ -4,14 +4,6 @@
     tools:context="cs495.winatwaiting.MainActivity" >
 
     <item
-        android:id="@+id/create_task"
-        android:orderInCategory="1"
-        android:title="@string/create_task_action_item"
-        android:icon="@android:drawable/ic_menu_add"
-        android:showAsAction="ifRoom"
-        app:showAsAction="ifRoom"/>
-    
-    <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"

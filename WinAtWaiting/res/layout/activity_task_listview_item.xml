@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_task_listview_item_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_vertical_padding"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/list_view_item_min_height"
+    android:paddingLeft="@dimen/activity_horizontal_padding"
+    android:paddingRight="@dimen/activity_horizontal_padding"
+    android:background="?android:attr/listChoiceBackgroundIndicator" >
+
+    <TextView
+        android:id="@+id/view_item_textview_task_priority"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="start|center_vertical"
+        android:minHeight="@dimen/list_view_item_min_height"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/view_item_textview_task_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical"
+        android:gravity="end|center_vertical"
+        android:minHeight="@dimen/list_view_item_min_height"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/view_item_textview_task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/list_view_item_text_padding"
+        android:layout_marginLeft="@dimen/activity_horizontal_padding"
+        android:layout_marginRight="@dimen/list_view_item_text_padding"
+        android:layout_marginStart="@dimen/activity_horizontal_padding"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_toEndOf="@id/view_item_textview_task_priority"
+        android:layout_toLeftOf="@id/view_item_textview_task_duration"
+        android:layout_toRightOf="@id/view_item_textview_task_priority"
+        android:layout_toStartOf="@id/view_item_textview_task_duration"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/view_item_textview_task_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/view_item_textview_task_name"
+        android:layout_alignStart="@id/view_item_textview_task_name"
+        android:layout_below="@id/view_item_textview_task_name"
+        android:layout_marginEnd="@dimen/list_view_item_text_padding"
+        android:layout_marginRight="@dimen/list_view_item_text_padding"
+        android:layout_toLeftOf="@id/view_item_textview_task_duration"
+        android:layout_toStartOf="@id/view_item_textview_task_duration"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="14sp" />
+
+</RelativeLayout>

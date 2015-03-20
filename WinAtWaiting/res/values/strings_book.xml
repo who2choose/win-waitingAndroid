@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Chapter 1: Introduction</item>
+        <item>1:Purpose</item>
+        <item>2:The Time We\'re Talking About</item>
+        <item>3:How To Use This Book</item>
+        <item>4:"Win At Waiting"</item>
+        <item>Chapter 2: Time is Precious</item>
+        <item>1:Time as Discrete Moments</item>
+        <item>2:Continuous Moments</item>
+        <item>3:The Value of Time</item>
+        <item>4:A Brief History of Clocks</item>
+        <item>Chapter 3: Waiting</item>
+        <item>1:Waiting Can Be a Waste of Time</item>
+        <item>2:Why People Don\'t Like to Wait</item>
+        <item>3:Waiting Can Be Good For You</item>
+        <item>4:How to Enjoy Waiting</item>
+        <item>Chapter 4: Approaches</item>
+        <item>1:Two Basic Choices</item>
+        <item>2:Do Something</item>
+        <item>3:Don’t Do Anything</item>
+        <item>4:Add Some Variety to Your Routine</item>
+        <item>5:Old Standbyes</item>
+        <item>6:New Standbyes</item>
+        <item>7:Planning and Preparation</item>
+        <item>8:Avoid Waiting</item>
+        <item>9:Advanced Techniques: How to Save Time Using Public Transportation</item>
+        <item>Chapter 5: Situations</item>
+        <item>1:Circumstances</item>
+        <item>2:Situations</item>
+        <item>3:Worksheet</item>
+        <item>4:Answers</item>
+        <item>Chapter 6: For Further Study</item>
+        <item>1:Bibliography</item>
+        <item>2:Join the Community</item>
+        <item>3:Quotes</item>
+        <item>About The Author</item>
+        <item>Acknowledgements</item>
+    </string-array>
+    
+    <string name="chapter1title">Chapter 1: Introduction</string>
+    <string name="chapter1titletext">How can you get more done without piling on stress? How can you create more time for family and friends?</string>
+    <string name="chapter1sub1">Purpose</string>
+    <string name="chapter1sub1text1" >
+        The pace of life is fast and getting faster. The purpose of this book is to help you get done more of what you want to do without piling on stress. It started out over fifteen years ago as an idea I thought 
+        could contribute something to the peace of the world, by reducing the frustration that arises from the combination of two aspects of the human condition: (1) we wait a lot, and (2) most people don’t like to 
+        wait. I hope that this book will reduce your stress and friction in relationships. 
+	</string>
+	<string name="chapter1sub1text2" >
+        We’re not going to lower stress by raising the level of anxiety over how productive we are. Many people already feel overloaded and can’t or don’t want to do any more. What we need instead is to start to do 
+        things differently. 
+	</string>
+	<string name="chapter1sub1text3" >
+        If you can turn your waiting into something that is productive and enjoyable you will probably be less resentful when your colleagues, friends, and family make you wait. 
+	</string>
+	<string name="chapter1sub1text4" >
+        Waiting is easier to do if you have something productive or enjoyable to do to pass the time. Much of what follows is common sense, but you may pick up some new ideas here and there. In any case, the time 
+        spent thinking about the subject will make you more conscious of this aspect of time management, and may help create a new habit.
+    </string>
+    <string name="chapter1sub2">The Time We\'re Talking About</string>
+    
+    <string name="chapter1sub2text1" formatted="false">This book deals with fairly short periods of time, from about ten seconds to one hour. The seconds and minutes that you save will add up though over the course of 
+        the months and years.
+	</string>
+	<string name="chapter1sub2text2" >
+		Let’s start with some sobering statistics about how we spend time doing a few of life’s common activities. If you are not sober, do not wish to become so, or just aren’t in the mood right now to digress, you may 
+		skip ahead to the next section, “How to use this book”. 
+	</string>
+	<string name="chapter1sub2text3" >
+		It has been estimated that we wait on the average of 45-60 minutes a day, which adds up to 2-5 years over the course of a lifetime. 6 months of that is at traffic lights, and one entire year is spent in line. 
+		Some labor saving machines are time saving as well. Having your own washing machine can save you the 54 hours a year you’d otherwise be spending, along with the quarters, at your neighborhood laundramat. 
+	</string>
+	<string name="chapter1sub2text4" >
+		A lot of time is spent on endeavors that aren’t exactly waiting, but are equally as unproductive, such as the average 199 hours a year spent commuting to and from work—more time than American’s typically get 
+		for vacation. It has been predicted that during your lifetime you will spend 8 months opening junk mail, and one year looking for lost possessions. A survey by a British clothing company found that the 
+		average woman spends 287 of her days deciding what to wear, often in an anxious state. 
+	</string>
+	<string name="chapter1sub2text5" >
+		There are a variety of reasons people watch TV—to escape, relax, have company when alone, share with others, or catch up on the news. Seen from a distance, watching TV looks like a form of waiting—a passive 
+		activity that one sinks into until it is time to do the next thing. But remember Democritus’ adage: “Penny wise, pound foolish”. While he was talking about money, observing those who are careful spending 
+		pennies but careless with larger sums, the idea can also be applied to time as well. Why bother rescuing a few minutes here and there if you’re devoting years of your life to watching television? Blow 
+		up or recycle your TV if you are serious about saving time! 
+	</string>
+	<string name="chapter1sub2text6" >
+		It has been estimated that the average American watches more than four hours of TV a day, or nine years by the age of 65. The average child spends 900 hours a year in school, but 1500 hours watching TV. One 
+		of the negative results for children of watching a lot of TV is that it reduces opportunities to learn to use their imagination as a form of entertainment. By the age of 18 a child will have viewed about 
+		200,000 violent acts, and by the time they reach 65 years old will have sat through 2 million commercials. 
+	</string>
+	<string name="chapter1sub2text7" formatted="false" >
+		Negative non-time related consequences of TV abuse include health results of a sedentary lifestyle combined with the high-calorie diet encouraged by its ads for junk food. Actresses on TV are 23% thinner than 95% of the female viewers, contributing to problems of self-image, which can lead to bulimia or anorexia. 
+	</string>
+	<string name="chapter1sub2text8" >
+		The mental processes required to process the combination of moving images and sounds easily stifle original thoughts. It hardly matters what the program is—the quickly changing camera angles, dialog, sound effects, and music suck you in. 
+	</string>
+	<string name="chapter1sub2text9" >
+		Many viewers show patterns of watching that are reminiscent of warning signs of substance abuse: 
+	</string>
+	<string name="chapter1sub2text10" >
+		Using TV as a sedative
+	</string>
+	<string name="chapter1sub2text11" >
+		Watching by yourself
+	</string>
+	<string name="chapter1sub2text12" >
+		Indiscriminate watching
+	</string>
+	<string name="chapter1sub2text13" >
+		Neglecting your responsibilities
+	</string>
+	<string name="chapter1sub2text14" >
+		TV causes problems in your relationships
+	</string>
+	<string name="chapter1sub2text15" >
+		Feeling out of control while watching
+	</string>
+	<string name="chapter1sub2text16" >
+		Feeling guilty or angry at oneself afterwards for watching too much
+	</string>
+	<string name="chapter1sub2text17" >
+		Your life revolves around watching
+	</string>
+	<string name="chapter1sub2text18" >
+		You are unable to stop watching
+	</string>
+	<string name="chapter1sub2text19" >
+		Feeling miserable when unable to watch
+	</string>
+	<string name="chapter1sub2text20" >
+		What can you do if you’re not ready to get rid of entertainment screens altogether? Try becoming more active, like the gang on Mystery Science Theater. Stay alert by talking back to the TV, question and mock 
+		commercials, comment on the story, and discuss why the program uses the images and approach that it does. Hit the mute button on your remote control whenever a commercial comes on, hop up, and do some 
+		stretching or knee bends. Sitting is bad for your health!
+    </string>
+    
+    <string name="chapter1sub3">How To Use This Book</string>
+    <string name="chapter1sub3text1">
+        There are plenty of lists out there of suggestions for things you can do while you wait. While there are some ideas for specific activities in Chapter 5, the point of this book is to 
+        develop a strategy for coming up with your own ideas, and for deciding which thing to do in any situation. 
+	</string>
+	<string name="chapter1sub3text2" >
+        You can read this book while you are waiting. Though we start out with some theory, this is primarily an activity book, so you’ll get the most out of it if you take notes while you read.
+	</string>
+    <string name="chapter1sub4">"Win At Waiting"</string>
+    <string name="chapter1sub4text1">
+        I agree with Thomas Carlyle that “a person usually has two reasons for doing something: a good reason and the real reason.” The good reason for putting “Win” in the title for this book 
+        was that one of its meanings is “overcoming difficulties and reaching one’s goals.” It’s OK to think of “winning” in this sense of finishing first in a competition if it gives you an energy boost to get started 
+        developing new habit, but hopefully over time the greater enjoyment of your time will be enough to keep you on track without always needing to be number one. 
+    </string>
+	<string name="chapter1sub4text2" >
+        The real reason for using the word “Win” was that the book 
+        needed a short and snappy alliterative title, and the “w” in “win” goes well with “waiting”.
+    </string>
+    
+    <string name="book_ending">Thank You for viewing this segment of Win At Waiting</string>
+	<string name="book_itunes_link"><a href="https://itunes.apple.com/us/book/win-at-waiting/id894793866?mt=11">Available for free on iTunes</a></string>
+    
+</resources>

@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="titular_blue_primary">#104AE9</color>
-	<color name="titular_blue_secondary">#0636BB</color>
-	<color name="titular_blue_tertiary">#05298C</color>
-	<color name="white">#FFFFFF</color>
+    <!-- ORANGE COLOR SCHEME 
+	<color name="primary_color">#FF7922</color>
+	<color name="secondary_color">#E05800</color>
+	<color name="tertiary_color">#B14600</color>      -->
+    <!-- DARK GREEN COLOR SCHEME 
+	<color name="primary_color">#045A13</color>
+	<color name="secondary_color">#004F0E</color>
+	<color name="tertiary_color">#003609</color>      -->
+    <!-- BLUE COLOR SCHEME 
+	<color name="primary_color">#104AE9</color>
+	<color name="secondary_color">#0636BB</color>
+	<color name="tertiary_color">#05298C</color>    -->
+    <!-- YELLOW COLOR SCHEME 
+	<color name="primary_color">#F3BF36</color>
+	<color name="secondary_color">#ECB00F</color>
+	<color name="tertiary_color">#C49109</color>
+	-->
+	
+	<!-- Full Color Scheme - Drew 
+	<color name="primary_color">#3F51B5</color> Indigo 500 (via Google design docs) 
+	<color name="primary_color_dark">#303F9F</color> Indigo 700 (via Google design docs) 
+	<color name="accent_color">#FF8A80</color> Red A100 (via Google design docs) 
+	-->
+	
+	<!-- Full Color Scheme - Zack -->
+	<color name="primary_color">#388E3C</color> <!-- Green 700 (via Google design docs) -->
+	<color name="primary_color_dark">#2E7D32</color> <!-- Green 800 (via Google design docs) -->
+	<color name="accent_color">#B388FF</color> <!-- Deep Purple A100 (via Google design docs) -->    
+    <!-- DARK GREY COLOR SCHEME 
+    <color name="primary_color">#262626</color>
+    <color name="secondary_color">#212121</color>
+    <color name="tertiary_color">#111111</color>
+	-->
+	
+    <!-- Other color items -->
+    <color name="white">#FFFFFF</color>
+    <color name="black_pitch">#000000</color>
+
 </resources>

@@ -1,17 +1,383 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="cs495.winatwaiting.activities.BookActivity" >
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/action_bar_toolbar"
-        android:minHeight="56dp"
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/book_activity_drawer_layout"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="@color/titular_blue_primary"
-		app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />        
-    
-</RelativeLayout>
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/book_activity_content_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ScrollView
+                android:id="@+id/activity_book_scrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:orientation="vertical" >
+
+                    <!-- CHAPTER 1 -->
+
+                    <TextView
+                        android:id="@+id/book_activity_textview_chapter1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:text="@string/chapter1title"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="@string/chapter1titletext"
+                        android:textSize="16sp" />
+
+                    <!-- sub1 -->
+
+                    <TextView
+                        android:id="@+id/book_activity_textview_chapter1sup1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:text="@string/chapter1sub1"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub1text1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub1text2"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub1text3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub1text4"
+                        android:textSize="16sp" />
+
+                    <!-- sub2 -->
+
+                    <TextView
+                        android:id="@+id/book_activity_textview_chapter1sup2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:text="@string/chapter1sub2"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text2"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text4"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text5"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text6"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text7"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text8"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text9"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text10"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text11"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text12"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text13"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text14"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text15"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text16"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text17"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text18"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text19"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub2text20"
+                        android:textSize="16sp" />
+
+                    <!-- sub3 -->
+
+                    <TextView
+                        android:id="@+id/book_activity_textview_chapter1sup3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:text="@string/chapter1sub3"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub3text1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub3text2"
+                        android:textSize="16sp" />
+
+                    <!-- sub4 -->
+
+                    <TextView
+                        android:id="@+id/book_activity_textview_chapter1sup4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:text="@string/chapter1sub4"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub4text1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="start"
+                        android:text="@string/chapter1sub4text2"
+                        android:textSize="16sp" />
+
+                    <!-- CHAPTER 2... -->
+
+                    <TextView
+                        android:id="@+id/book_activity_textview_ending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:text="@string/book_ending"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/book_activity_textview_link"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="start"
+                        android:text="@string/book_itunes_link"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/book_activity_left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" />
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

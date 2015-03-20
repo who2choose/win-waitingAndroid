@@ -10,20 +10,30 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
-public class CreateTasksActivity extends ActionBarActivity {
+public class ViewTaskActivity extends ActionBarActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_create_tasks);
+		setContentView(R.layout.activity_view_task);
+		Bundle extras = getIntent().getExtras();
 		setupToolBar();
+		((TextView) this.findViewById(R.id.view_task_item_name))
+				.setText(extras.getString(TaskActivity.NAME_FIELD));
+		((TextView) this.findViewById(R.id.view_task_item_duration_value))
+				.setText(extras.getString(TaskActivity.DURATION_FIELD));
+		((TextView) this.findViewById(R.id.view_task_item_priority_value))
+				.setText(extras.getString(TaskActivity.PRIORITY_FIELD));
+		((TextView) this.findViewById(R.id.view_task_item_additional_information))
+				.setText(extras.getString(TaskActivity.DESCRIPTION_FIELD));
 	}
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.create_tasks, menu);
+		getMenuInflater().inflate(R.menu.view_task_item, menu);
 		return true;
 	}
 
@@ -38,21 +48,21 @@ public class CreateTasksActivity extends ActionBarActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
-	public void setupToolBar(){
-		Toolbar actionBarToolbar = (Toolbar) findViewById(R.id.action_bar_toolbar);
-		setSupportActionBar(actionBarToolbar);
+
+	public void setupToolBar() {
+		setSupportActionBar((Toolbar) findViewById(R.id.action_bar_toolbar));
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 			buildForLollipop();
 		}
 	}
-	
+
 	@SuppressLint("InlinedApi")
-	public void buildForLollipop(){
+	public void buildForLollipop() {
 		Window window = getWindow();
 		window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-		window.setStatusBarColor(getResources().getColor(R.color.titular_blue_secondary));
+		window.setStatusBarColor(getResources().getColor(
+				R.color.primary_color_dark));
 	}
-	
+
 }

@@ -16,6 +16,9 @@ public final class R {
         public static final int abc_slide_out_bottom=0x7f040004;
         public static final int abc_slide_out_top=0x7f040005;
     }
+    public static final class array {
+        public static final int navigation_drawer_items_array=0x7f0c0000;
+    }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1376,25 +1379,29 @@ containing a value of this type.
         public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f050003;
     }
     public static final class color {
-        public static final int abc_background_cache_hint_selector_material_dark=0x7f060035;
-        public static final int abc_background_cache_hint_selector_material_light=0x7f060036;
+        public static final int abc_background_cache_hint_selector_material_dark=0x7f060036;
+        public static final int abc_background_cache_hint_selector_material_light=0x7f060037;
         public static final int abc_input_method_navigation_guard=0x7f060003;
-        public static final int abc_primary_text_disable_only_material_dark=0x7f060037;
-        public static final int abc_primary_text_disable_only_material_light=0x7f060038;
-        public static final int abc_primary_text_material_dark=0x7f060039;
-        public static final int abc_primary_text_material_light=0x7f06003a;
-        public static final int abc_search_url_text=0x7f06003b;
+        public static final int abc_primary_text_disable_only_material_dark=0x7f060038;
+        public static final int abc_primary_text_disable_only_material_light=0x7f060039;
+        public static final int abc_primary_text_material_dark=0x7f06003a;
+        public static final int abc_primary_text_material_light=0x7f06003b;
+        public static final int abc_search_url_text=0x7f06003c;
         public static final int abc_search_url_text_normal=0x7f060000;
         public static final int abc_search_url_text_pressed=0x7f060002;
         public static final int abc_search_url_text_selected=0x7f060001;
-        public static final int abc_secondary_text_material_dark=0x7f06003c;
-        public static final int abc_secondary_text_material_light=0x7f06003d;
+        public static final int abc_secondary_text_material_dark=0x7f06003d;
+        public static final int abc_secondary_text_material_light=0x7f06003e;
+        /**  Green 800 (via Google design docs) 
+         */
+        public static final int accent_color=0x7f060033;
         public static final int accent_material_dark=0x7f06000f;
         public static final int accent_material_light=0x7f06000e;
         public static final int background_floating_material_dark=0x7f060006;
         public static final int background_floating_material_light=0x7f060007;
         public static final int background_material_dark=0x7f060004;
         public static final int background_material_light=0x7f060005;
+        public static final int black_pitch=0x7f060035;
         /**  White 50% 
          */
         public static final int bright_foreground_disabled_material_dark=0x7f060016;
@@ -1426,6 +1433,37 @@ containing a value of this type.
         public static final int material_blue_grey_950=0x7f060030;
         public static final int material_deep_teal_200=0x7f06002c;
         public static final int material_deep_teal_500=0x7f06002d;
+        /**  ORANGE COLOR SCHEME 
+	<color name="primary_color">#FF7922</color>
+	<color name="secondary_color">#E05800</color>
+	<color name="tertiary_color">#B14600</color>  
+    
+ DARK GREEN COLOR SCHEME 
+	<color name="primary_color">#045A13</color>
+	<color name="secondary_color">#004F0E</color>
+	<color name="tertiary_color">#003609</color>  
+    
+ BLUE COLOR SCHEME 
+	<color name="primary_color">#104AE9</color>
+	<color name="secondary_color">#0636BB</color>
+	<color name="tertiary_color">#05298C</color>
+    
+ YELLOW COLOR SCHEME 
+	<color name="primary_color">#F3BF36</color>
+	<color name="secondary_color">#ECB00F</color>
+	<color name="tertiary_color">#C49109</color>
+	
+ Full Color Scheme - Drew 
+	<color name="primary_color">#3F51B5</color> Indigo 500 (via Google design docs) 
+	<color name="primary_color_dark">#303F9F</color> Indigo 700 (via Google design docs) 
+	<color name="accent_color">#FF8A80</color> Red A100 (via Google design docs) 
+	
+ Full Color Scheme - Zack 
+         */
+        public static final int primary_color=0x7f060031;
+        /**  Green 700 (via Google design docs) 
+         */
+        public static final int primary_color_dark=0x7f060032;
         public static final int primary_dark_material_dark=0x7f06000a;
         public static final int primary_dark_material_light=0x7f06000b;
         public static final int primary_material_dark=0x7f060008;
@@ -1446,9 +1484,14 @@ containing a value of this type.
         public static final int secondary_text_disabled_material_light=0x7f060029;
         public static final int switch_thumb_normal_material_dark=0x7f060012;
         public static final int switch_thumb_normal_material_light=0x7f060013;
-        public static final int titular_blue_primary=0x7f060031;
-        public static final int titular_blue_secondary=0x7f060032;
-        public static final int titular_blue_tertiary=0x7f060033;
+        /**  Deep Purple A100 (via Google design docs) 
+ DARK GREY COLOR SCHEME 
+    <color name="primary_color">#262626</color>
+    <color name="secondary_color">#212121</color>
+    <color name="tertiary_color">#111111</color>
+	
+ Other color items 
+         */
         public static final int white=0x7f060034;
     }
     public static final class dimen {
@@ -1548,8 +1591,10 @@ containing a value of this type.
     
          */
         public static final int activity_horizontal_margin=0x7f07002b;
-        public static final int activity_vertical_margin=0x7f07002c;
-        public static final int activity_vertical_toolbar_offset=0x7f07002d;
+        public static final int activity_horizontal_padding=0x7f07002c;
+        public static final int activity_vertical_margin=0x7f07002d;
+        public static final int activity_vertical_padding=0x7f07002e;
+        public static final int activity_vertical_toolbar_offset=0x7f07002f;
         /**  The platform's desired fixed height for a dialog along the major axis
          (the screen is in portrait). This may be either a fraction or a dimension.
  The platform's desired fixed height for a dialog along the major axis
@@ -1584,6 +1629,8 @@ containing a value of this type.
         public static final int dialog_fixed_width_minor=0x7f07000d;
         public static final int disabled_alpha_material_dark=0x7f070001;
         public static final int disabled_alpha_material_light=0x7f070000;
+        public static final int list_view_item_min_height=0x7f070030;
+        public static final int list_view_item_text_padding=0x7f070031;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_holo_dark=0x7f020000;
@@ -1638,7 +1685,9 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int actionbar_tab_indicator=0x7f020033;
-        public static final int ic_launcher=0x7f020034;
+        public static final int edittext_design=0x7f020034;
+        public static final int ic_action_new=0x7f020035;
+        public static final int ic_launcher=0x7f020036;
     }
     public static final class id {
         public static final int action_bar=0x7f090031;
@@ -1648,25 +1697,44 @@ containing a value of this type.
         public static final int action_bar_spinner=0x7f090002;
         public static final int action_bar_subtitle=0x7f09001f;
         public static final int action_bar_title=0x7f09001e;
-        public static final int action_bar_toolbar=0x7f09003f;
+        public static final int action_bar_toolbar=0x7f09006c;
         public static final int action_context_bar=0x7f090032;
         public static final int action_menu_divider=0x7f090005;
         public static final int action_menu_presenter=0x7f090006;
         public static final int action_mode_bar=0x7f09002e;
         public static final int action_mode_bar_stub=0x7f09002d;
         public static final int action_mode_close_button=0x7f090020;
-        public static final int action_settings=0x7f090045;
+        public static final int action_settings=0x7f09006d;
+        public static final int activity_book_scrollview=0x7f090041;
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int always=0x7f090014;
         public static final int beginning=0x7f09001b;
-        public static final int button_book=0x7f090043;
-        public static final int button_create_tasks=0x7f090044;
-        public static final int button_social=0x7f090042;
-        public static final int button_todo=0x7f090041;
-        public static final int button_view_tasks=0x7f090040;
+        public static final int book_activity_content_frame=0x7f090040;
+        public static final int book_activity_drawer_layout=0x7f09003f;
+        public static final int book_activity_left_drawer=0x7f090049;
+        public static final int book_activity_textview_chapter1=0x7f090042;
+        public static final int book_activity_textview_chapter1sup1=0x7f090043;
+        public static final int book_activity_textview_chapter1sup2=0x7f090044;
+        public static final int book_activity_textview_chapter1sup3=0x7f090045;
+        public static final int book_activity_textview_chapter1sup4=0x7f090046;
+        public static final int book_activity_textview_ending=0x7f090047;
+        public static final int book_activity_textview_link=0x7f090048;
+        public static final int button_book=0x7f090057;
+        public static final int button_create_tasks=0x7f090053;
+        public static final int button_social=0x7f090056;
+        public static final int button_todo=0x7f090055;
+        public static final int button_view_tasks=0x7f090054;
         public static final int checkbox=0x7f090029;
         public static final int collapseActionView=0x7f090015;
-        public static final int create_task=0x7f090046;
+        public static final int create_task=0x7f09006e;
+        public static final int create_tasks_item_additional_information=0x7f090052;
+        public static final int create_tasks_item_duration_label=0x7f09004e;
+        public static final int create_tasks_item_duration_value=0x7f09004f;
+        public static final int create_tasks_item_name=0x7f09004b;
+        public static final int create_tasks_item_priority_label=0x7f09004c;
+        public static final int create_tasks_item_priority_value=0x7f09004d;
+        public static final int create_tasks_item_privacy_checkbox=0x7f090051;
+        public static final int create_tasks_item_privacy_label=0x7f090050;
         public static final int decor_content_parent=0x7f09002f;
         public static final int default_activity_button=0x7f090024;
         public static final int dialog=0x7f090019;
@@ -1687,6 +1755,7 @@ containing a value of this type.
         public static final int never=0x7f090017;
         public static final int none=0x7f09000f;
         public static final int normal=0x7f09000b;
+        public static final int pager=0x7f090059;
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09002b;
@@ -1704,12 +1773,32 @@ containing a value of this type.
         public static final int showCustom=0x7f090010;
         public static final int showHome=0x7f090011;
         public static final int showTitle=0x7f090012;
+        public static final int sliding_tabs=0x7f090058;
         public static final int split_action_bar=0x7f090004;
         public static final int submit_area=0x7f09003c;
         public static final int tabMode=0x7f09000c;
+        public static final int textViewName=0x7f09004a;
         public static final int title=0x7f090027;
+        public static final int todo_button=0x7f090065;
+        public static final int todo_edittext1=0x7f090060;
+        public static final int todo_edittext2=0x7f090061;
+        public static final int todo_edittext3=0x7f090062;
+        public static final int todo_edittext4=0x7f090063;
+        public static final int todo_edittext5=0x7f090064;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
+        public static final int view_item_textview_task_description=0x7f09005f;
+        public static final int view_item_textview_task_duration=0x7f09005d;
+        public static final int view_item_textview_task_name=0x7f09005e;
+        public static final int view_item_textview_task_priority=0x7f09005c;
+        public static final int view_listview=0x7f09005a;
+        public static final int view_task_item_additional_information=0x7f09006b;
+        public static final int view_task_item_duration_label=0x7f090069;
+        public static final int view_task_item_duration_value=0x7f09006a;
+        public static final int view_task_item_name=0x7f090066;
+        public static final int view_task_item_priority_label=0x7f090067;
+        public static final int view_task_item_priority_value=0x7f090068;
+        public static final int view_task_listview_item_relativelayout=0x7f09005b;
         public static final int withText=0x7f090018;
         public static final int wrap_content=0x7f090009;
     }
@@ -1763,18 +1852,25 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_book=0x7f030017;
-        public static final int activity_create_tasks=0x7f030018;
-        public static final int activity_main=0x7f030019;
-        public static final int activity_todo=0x7f03001a;
-        public static final int activity_view_tasks=0x7f03001b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001c;
+        public static final int activity_book_listview_item_row=0x7f030018;
+        public static final int activity_create_tasks=0x7f030019;
+        public static final int activity_main=0x7f03001a;
+        public static final int activity_task=0x7f03001b;
+        public static final int activity_task_fragment_filter=0x7f03001c;
+        public static final int activity_task_fragment_view_list=0x7f03001d;
+        public static final int activity_task_listview_item=0x7f03001e;
+        public static final int activity_todo=0x7f03001f;
+        public static final int activity_view_task=0x7f030020;
+        public static final int support_simple_spinner_dropdown_item=0x7f030021;
+        public static final int toolbar=0x7f030022;
     }
     public static final class menu {
-        public static final int book=0x7f0c0000;
-        public static final int create_tasks=0x7f0c0001;
-        public static final int main=0x7f0c0002;
-        public static final int todo=0x7f0c0003;
-        public static final int view_tasks=0x7f0c0004;
+        public static final int book=0x7f0d0000;
+        public static final int create_task=0x7f0d0001;
+        public static final int main=0x7f0d0002;
+        public static final int task=0x7f0d0003;
+        public static final int todo=0x7f0d0004;
+        public static final int view_task_item=0x7f0d0005;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1840,24 +1936,74 @@ containing a value of this type.
         /**  Book Activity Strings 
          */
         public static final int book_activity_title=0x7f0a0019;
+        public static final int book_ending=0x7f0a004b;
+        public static final int book_itunes_link=0x7f0a004c;
+        public static final int chapter1sub1=0x7f0a002b;
+        public static final int chapter1sub1text1=0x7f0a002c;
+        public static final int chapter1sub1text2=0x7f0a002d;
+        public static final int chapter1sub1text3=0x7f0a002e;
+        public static final int chapter1sub1text4=0x7f0a002f;
+        public static final int chapter1sub2=0x7f0a0030;
+        public static final int chapter1sub2text1=0x7f0a0031;
+        public static final int chapter1sub2text10=0x7f0a003a;
+        public static final int chapter1sub2text11=0x7f0a003b;
+        public static final int chapter1sub2text12=0x7f0a003c;
+        public static final int chapter1sub2text13=0x7f0a003d;
+        public static final int chapter1sub2text14=0x7f0a003e;
+        public static final int chapter1sub2text15=0x7f0a003f;
+        public static final int chapter1sub2text16=0x7f0a0040;
+        public static final int chapter1sub2text17=0x7f0a0041;
+        public static final int chapter1sub2text18=0x7f0a0042;
+        public static final int chapter1sub2text19=0x7f0a0043;
+        public static final int chapter1sub2text2=0x7f0a0032;
+        public static final int chapter1sub2text20=0x7f0a0044;
+        public static final int chapter1sub2text3=0x7f0a0033;
+        public static final int chapter1sub2text4=0x7f0a0034;
+        public static final int chapter1sub2text5=0x7f0a0035;
+        public static final int chapter1sub2text6=0x7f0a0036;
+        public static final int chapter1sub2text7=0x7f0a0037;
+        public static final int chapter1sub2text8=0x7f0a0038;
+        public static final int chapter1sub2text9=0x7f0a0039;
+        public static final int chapter1sub3=0x7f0a0045;
+        public static final int chapter1sub3text1=0x7f0a0046;
+        public static final int chapter1sub3text2=0x7f0a0047;
+        public static final int chapter1sub4=0x7f0a0048;
+        public static final int chapter1sub4text1=0x7f0a0049;
+        public static final int chapter1sub4text2=0x7f0a004a;
+        public static final int chapter1title=0x7f0a0029;
+        public static final int chapter1titletext=0x7f0a002a;
         public static final int create_task_action_item=0x7f0a0012;
+        public static final int create_tasks_activity_additional_information_hint=0x7f0a001f;
+        public static final int create_tasks_activity_duration_label=0x7f0a001d;
+        public static final int create_tasks_activity_name_hint=0x7f0a001b;
+        public static final int create_tasks_activity_priority_label=0x7f0a001c;
+        public static final int create_tasks_activity_privacy_label=0x7f0a001e;
         /**  Create Tasks Activity Strings 
          */
         public static final int create_tasks_activity_title=0x7f0a001a;
+        public static final int create_tasls_activity_submit_button=0x7f0a0020;
         public static final int main_activity_button_book=0x7f0a0018;
         public static final int main_activity_button_create_tasks=0x7f0a0015;
         public static final int main_activity_button_social=0x7f0a0017;
         public static final int main_activity_button_todo=0x7f0a0016;
+        /**  temporary title until branding is done 
+         */
         public static final int main_activity_button_view_tasks=0x7f0a0014;
         /**  Main Screen Strings 
          */
         public static final int main_activity_title=0x7f0a0013;
+        public static final int todo_activity_edittext_item_1=0x7f0a0023;
+        public static final int todo_activity_edittext_item_2=0x7f0a0024;
+        public static final int todo_activity_edittext_item_3=0x7f0a0025;
+        public static final int todo_activity_edittext_item_4=0x7f0a0026;
+        public static final int todo_activity_edittext_item_5=0x7f0a0027;
+        public static final int todo_activity_save_button=0x7f0a0022;
         /**  ToDo Activity Strings 
          */
-        public static final int todo_activity_title=0x7f0a001b;
+        public static final int todo_activity_title=0x7f0a0021;
         /**  View Tasks Activity Strings 
          */
-        public static final int view_tasks_activity_title=0x7f0a001c;
+        public static final int view_tasks_activity_title=0x7f0a0028;
     }
     public static final class style {
         /** 
@@ -2018,7 +2164,6 @@ containing a value of this type.
          */
         public static final int Base_Widget_AppCompat_Toolbar_Button_Navigation=0x7f0b0090;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int MainTheme=0x7f0b00ec;
         public static final int Platform_AppCompat=0x7f0b00c9;

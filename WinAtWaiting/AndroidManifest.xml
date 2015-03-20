@@ -23,12 +23,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="cs495.winatwaiting.activities.CreateTasksActivity"
+            android:name="cs495.winatwaiting.activities.CreateTaskActivity"
             android:label="@string/create_tasks_activity_title"
-            android:parentActivityName="cs495.winatwaiting.MainActivity" >
+            android:parentActivityName="cs495.winatwaiting.activities.TaskActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="cs495.winatwaiting.MainActivity" />
+                android:value="cs495.winatwaiting.activities.TaskActivity" />
 
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_TASK" />
@@ -38,7 +38,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="cs495.winatwaiting.activities.ViewTasksActivity"
+            android:name="cs495.winatwaiting.activities.TaskActivity"
             android:label="@string/view_tasks_activity_title"
             android:parentActivityName="cs495.winatwaiting.MainActivity" >
             <meta-data
@@ -51,6 +51,14 @@
                 <category android:name="android.intent.action.DEFAULT" />
                 <!-- TODO: add a data type to manage -->
             </intent-filter>
+        </activity>
+        <activity
+            android:name="cs495.winatwaiting.activities.ViewTaskActivity"
+            android:label=""
+            android:parentActivityName="cs495.winatwaiting.activities.TaskActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cs495.winatwaiting.activities.TaskActivity" />
         </activity>
         <activity
             android:name="cs495.winatwaiting.activities.ToDoActivity"
